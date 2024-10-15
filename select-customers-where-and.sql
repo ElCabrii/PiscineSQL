@@ -1,2 +1,2 @@
 SELECT FirstName, LastName FROM customers
-WHERE "SupportRepId" = 3 AND "Country" IN ('USA', 'Canada');
+WHERE "Country" IN ('USA', 'Canada') AND "SupportRepId" = 3;
