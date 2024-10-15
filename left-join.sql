@@ -1,4 +1,4 @@
-SELECT artists.Name, albums.Title
+SELECT artists.Name, albums.Title AS AlbumTitle
 FROM artists
 LEFT JOIN albums ON artists.ArtistId = albums.ArtistId
-WHERE albums.Title IS NOT NULL;
+LIMIT 100;
