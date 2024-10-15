@@ -1,2 +1,5 @@
 SELECT FirstName, LastName FROM customers
-WHERE Country = 'USA' AND SupportRepId = 3;
+WHERE Country = 'USA' AND SupportRepId = (
+    SELECT EmployeeId FROM employees
+    WHERE LastName = 'Peacock'
+);
